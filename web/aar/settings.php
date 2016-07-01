@@ -9,11 +9,11 @@ class SIMRegistry
     public function __construct()
     {
         self::$settings['community_name'] = "Arma Goons";
-        self::$settings['community_url'] = "http://www.armagoons.com";
+        self::$settings['community_url'] = "http://www.armagoons.com/";
         self::$settings['favicon'] = "./res/img/favicon.ico";
 
-        self::$settings['base_url'] = "http://aar.armagoons.com";
-        self::$settings['replay_url'] = "replay.php?id=";
+        self::$settings['base_url'] = "http://aar.armagoons.com/";
+        self::$settings['replay_url'] = "/replay.php?id=";
 
         self::$settings['db_host'] = "localhost";
         self::$settings['db_user'] = "sim_usr";
