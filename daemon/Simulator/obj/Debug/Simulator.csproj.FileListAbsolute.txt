@@ -1,0 +1,1 @@
+C:\inetpub\sites\server-information-system\daemon\Simulator\bin\Debug\Simulator.exe.config

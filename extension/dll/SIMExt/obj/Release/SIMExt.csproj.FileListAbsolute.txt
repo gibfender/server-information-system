@@ -1,0 +1,5 @@
+C:\inetpub\sites\server-information-system\extension\dll\SIMExt\bin\Release\SIMExt.dll
+C:\inetpub\sites\server-information-system\extension\dll\SIMExt\bin\Release\SIMExt.pdb
+C:\inetpub\sites\server-information-system\extension\dll\SIMExt\obj\Release\SIMExt.csprojResolveAssemblyReference.cache
+C:\inetpub\sites\server-information-system\extension\dll\SIMExt\obj\Release\SIMExt.dll
+C:\inetpub\sites\server-information-system\extension\dll\SIMExt\obj\Release\SIMExt.pdb

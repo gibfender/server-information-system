@@ -1,0 +1,6 @@
+C:\inetpub\sites\server-information-system\daemon\SIMDaemon\bin\Debug\SIMDaemon.exe.config
+C:\inetpub\sites\server-information-system\daemon\SIMDaemon\bin\Debug\SIMDaemon.exe
+C:\inetpub\sites\server-information-system\daemon\SIMDaemon\bin\Debug\SIMDaemon.pdb
+C:\inetpub\sites\server-information-system\daemon\SIMDaemon\obj\Debug\SIMDaemon.csprojResolveAssemblyReference.cache
+C:\inetpub\sites\server-information-system\daemon\SIMDaemon\obj\Debug\SIMDaemon.exe
+C:\inetpub\sites\server-information-system\daemon\SIMDaemon\obj\Debug\SIMDaemon.pdb
