@@ -27,8 +27,8 @@ var_dump($serverinfo);
      <link rel="shortcut icon" href="http://forums.unitedoperations.net/favicon.ico">
      <script src='<?php echo SIM_DIR_JS ?>countdown.min.js' type="text/javascript" async></script>
      <script src="<?php echo SIM_DIR_JS ?>jquery-2.1.1.js" type="text/javascript" defer></script>
-     <meta name="keywords" content="United Operations, UOSTISS, UOSIM">
-     <meta name="description" content="United Operations' Server Tracking System.">
+     <meta name="keywords" content="Arma Goons, UOSTISS, UOSIM">
+     <meta name="description" content="Arma Goons' Server Tracking System.">
      <meta name="author" content="Verox">
  </head>
      <body>
@@ -37,7 +37,7 @@ var_dump($serverinfo);
      </div>
      <div id='page_content'>
          <div id='server_header'>
-             <img src='<?php echo SIM_DIR_IMG ?>title_back.png' alt='United Operations Server Tracker'>
+             <img src='<?php echo SIM_DIR_IMG ?>title_back.png' alt='Arma Goons Server Tracker'>
              <!---<span id='server_header_name'>## SERVER NAME ##</span> -->
          </div>
 

@@ -10,11 +10,11 @@ class SIMRegistry
     {
 
         /// ---------- EDIT SETTINGS BELOW THIS LINE ---------- ///
-        
-        self::$settings['base_url'] = "http://sim.armagoons.com";
+
+        self::$settings['base_url'] = "http://sim.armagoons.com/";
         self::$settings['db_host'] = "localhost";
-        self::$settings['db_user'] = "root";
-        self::$settings['db_pass'] = "birdsresearchanybodyonce123!";
+        self::$settings['db_user'] = "sim_usr";
+        self::$settings['db_pass'] = "Hypermusic123!";
         self::$settings['db_database'] = "sim";
 
         self::$settings['query'][0]['id'] = "SRV1"; // 4 Character unique identifer for server.

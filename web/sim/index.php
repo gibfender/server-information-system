@@ -21,13 +21,13 @@ var_dump($serverinfo);
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UO Server Tracking, Information and Statistics System</title>
+        <title>ArmaGoons Server Tracking, Information and Statistics System</title>
         <link rel='stylesheet' type='text/css' href='<?php echo SIM_DIR_CSS ?>main.css'>
         <link rel="shortcut icon" href="http://aar.armagoons.com/favicon.ico">
         <script src='<?php echo SIM_DIR_JS ?>countdown.min.js' type="text/javascript" async></script>
         <script src="<?php echo SIM_DIR_JS ?>jquery-2.1.1.js" type="text/javascript" defer></script>
-        <meta name="keywords" content="United Operations, UOSTISS, UOSIM">
-        <meta name="description" content="United Operations' Server Tracking System.">
+        <meta name="keywords" content="Arma Goons, UOSTISS, UOSIM">
+        <meta name="description" content="Arma Goons' Server Tracking System.">
         <meta name="author" content="Verox">
     </head>
     <body>
@@ -36,8 +36,8 @@ var_dump($serverinfo);
 	</div>
 	<div id='page_content'>
 		<div id='server_header'>
-			<img src='<?php echo SIM_DIR_IMG ?>title_back.png' alt='United Operations Server Tracker'>
-			<!---<span id='server_header_name'>## SERVER NAME ##</span> -->
+			<img src='<?php echo SIM_DIR_IMG ?>title_back.png' alt='Arma Goons Server Tracker'>
+			<span id='server_header_name'>## SERVER NAME ##</span>
 		</div>
 
 		<div id='error_panel'>
@@ -45,7 +45,7 @@ var_dump($serverinfo);
 			<? echo $errors; ?>
 		</div>
 		<script>
-		var t = "<? echo $serverinfo['last_updated']; ?>".split(/[- :]/);
+		var t = "<? echo $serverinfo['last_updated']; ?>".preg_split(/[- :]/);
 		var e = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
 		var d = new Date(e +" UTC");
 
@@ -66,8 +66,8 @@ var_dump($serverinfo);
 									<tr><td class='sip_title'>Island:</td><td class='sip_value'><? echo $serverinfo['map']; ?></td></tr>
 									<tr><td class='sip_title'>Mission:</td><td class='sip_value'><? echo $serverinfo['mission']; ?></td></tr>
 									<tr><td class='sip_title'>Game Type:</td><td class='sip_value'><? echo $serverinfo['mission_information']['field_43']; ?></td></tr>
-									<!--<tr><td class='sip_title'>Mission State:</td><td class='sip_value'><span style='font-style: italic;'>PROTOCOL_ERROR::NOT_IMPLEMENTED</span></td></tr>
-									<tr><td class='sip_title'>Difficulty:</td><td class='sip_value'><span style='font-style: italic;'>PROTOCOL_ERROR::NOT_IMPLEMENTED</span></td></tr>-->
+									<tr><td class='sip_title'>Mission State:</td><td class='sip_value'><span style='font-style: italic;'>PROTOCOL_ERROR::NOT_IMPLEMENTED</span></td></tr>
+									<tr><td class='sip_title'>Difficulty:</td><td class='sip_value'><span style='font-style: italic;'>PROTOCOL_ERROR::NOT_IMPLEMENTED</span></td></tr>
 									<tr><td class='sip_title'>Mission Author:</td><td class='sip_value'><span><? echo $serverinfo['mission_information']['field_47']; ?></span></td></tr>
 									<tr><td class='sip_title'>Mission Description:</td><td class='sip_value'><div style="overflow: overlay; height: 321px; word-wrap: break-word;"><? echo $serverinfo['mission_information']['field_49']; ?></div></td></tr>
 								</table>
@@ -77,9 +77,8 @@ var_dump($serverinfo);
 				</div>
 				<div id='server_quickview' class='outerBox'>
 					<h3>Tools</h3>
-					<div class='contentBox'>
+					  <div class='contentBox'>
 						<img src='./resource/images/maps/<? (!$serverinfo['players'] ? $return = "empty" : $return = $serverinfo['map']); echo $return; ?>.png' style="margin: 10px;" width='250px'/><br />
-						<!-- <div style='word-wrap: break-word;'>100 people playing CO30_whateverthefuck_v2 on Altis.</div> -->
 						<div style='font-size: 11px; text-align: center;'>
 							<strong>Rate Mission</strong><br />
 							<img src='./resource/images/icons/star.png' alt='full_star'>
@@ -88,14 +87,14 @@ var_dump($serverinfo);
 							<img src='./resource/images/icons/star.png' alt='full_star'>
 							<img src='./resource/images/icons/star.png' alt='full_star'>
 						</div>
-						<!---<div class='quickbuttons'>
+						<div class='quickbuttons'>
 							<ul class='quickbuttons_list'>
 								<li><a href='pws://six.unitedoperations.net/arma3/a3srv1.yml?action=update,join' >Join server with <img src='./resource/images/icons/six_logo.svg' width='20px' style='vertical-align: text-top;' alt='Play withSix'/></a></li>pws://six.armaseries.cz/a3/505.yml?action=update,join
 								<li><a <? if ($serverinfo['players'] != 0) {echo "href='#' onClick=\"$('#report_form').submit();\"";} else {echo "class='disabled_button'";} ?> >Report mission as Broken</a></li>
 								<li><a <? if ($serverinfo['players'] != 0) {echo "href='#'";} else {echo "class='disabled_button'";} ?> >Mission Statistics</a></li>
 								<li><a href='http://forums.unitedoperations.net/index.php/page/ArmA3/missionlist/_/livemissions/<? echo $serverinfo['mission_information']['record_dynamic_furl'] . "-r" . $serverinfo['mission_information']['primary_id_field']; ?>' target='_blank'>View in mission database</a></li>
 							</ul>
-						</div> -->
+						</div>
 					</div>
 					<form id="report_form" action="http://forums.unitedoperations.net/index.php/page/MMO/ReportTool" method="POST" target="_blank">
 					<input type="hidden" name="mission" value="<? echo $serverinfo['mission_information']['field_38']; ?>">
@@ -103,7 +102,6 @@ var_dump($serverinfo);
 					<input type="hidden" name="dbid" value="7">
 					<input type="hidden" name="recordID" value="<? echo $serverinfo['mission_information']['primary_id_field']; ?>">
 					</form>
-					<!--- 100 people playing CO30_whateverthefuck_v2 on Altis. -->
 				</div>
 			</div>
 		</div>
