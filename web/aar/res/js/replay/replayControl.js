@@ -125,7 +125,7 @@ function RunClock() {
 
     $("#staticLinkButton").click(function() {
         $("#staticLinkContainer").toggle(400);
-        $("#staticLinkText").html("http://aar.unitedoperations.net/replay/" + replayIdentifierHash + "/frame/" + framePointer);
+        $("#staticLinkText").html("http://aar.armagoons.com/replay/" + replayIdentifierHash + "/frame/" + framePointer);
     });
 
     $("#staticLinkContainerClose").click(function() {

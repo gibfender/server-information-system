@@ -2,7 +2,7 @@ var currentIsland = undefined;
 var map;
 var mapInfo = new Array();
 
-var source = new EventSource("http://aar.unitedoperations.net/api/v1/MissionStatus.php?server=SRV1");
+var source = new EventSource("http://aar.armagoons.com/api/v1/MissionStatus.php?server=SRV1");
 $("#mapContainer").append("<span style='color: grey'>No mission currently being played. The viewier will automatically activate when a mission starts.</span>");
 source.onmessage = function(event) {
     var serverInfo = JSON.parse(event.data);
@@ -41,7 +41,7 @@ function InitMap(island)
     currentIsland = island.toLowerCase();
 
     // Check if the map exists on the server.
-    var jqxhr = $.getJSON( "http://aar.unitedoperations.net/maps/" + island.toLowerCase() + "/map.json" )
+    var jqxhr = $.getJSON( "http://aar.armagoons.com/maps/" + island.toLowerCase() + "/map.json" )
     .done(function( json ) {
         // Create the container.
         $("#mapContainer").append("<div id='map'></div>");
@@ -53,7 +53,7 @@ function InitMap(island)
         map = L.map('map', {crs: L.CRS.Simple}).setView(mapCenter , json.defaultZoom);
 
         // Set the tile layer.
-        L.tileLayer('http://aar.unitedoperations.net/maps/{m}/{z}/{x}/{y}.png', {
+        L.tileLayer('http://aar.armagoons.com/maps/{m}/{z}/{x}/{y}.png', {
                attribution: '<a target="_blank" href="http://forums.bistudio.com/showthread.php?178671-Tiled-maps-Google-maps-compatible-%28WIP%29">Map data 10T</a>',
                minZoom: json.minZoom,
                maxZoom: json.maxZoom,

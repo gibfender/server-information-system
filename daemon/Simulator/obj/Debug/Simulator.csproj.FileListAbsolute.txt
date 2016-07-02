@@ -1,1 +1,6 @@
 C:\inetpub\sites\server-information-system\daemon\Simulator\bin\Debug\Simulator.exe.config
+C:\inetpub\sites\server-information-system\daemon\Simulator\bin\Debug\Simulator.exe
+C:\inetpub\sites\server-information-system\daemon\Simulator\bin\Debug\Simulator.pdb
+C:\inetpub\sites\server-information-system\daemon\Simulator\obj\Debug\Simulator.csprojResolveAssemblyReference.cache
+C:\inetpub\sites\server-information-system\daemon\Simulator\obj\Debug\Simulator.exe
+C:\inetpub\sites\server-information-system\daemon\Simulator\obj\Debug\Simulator.pdb

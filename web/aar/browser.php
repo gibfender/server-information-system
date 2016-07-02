@@ -106,6 +106,6 @@ $settings = SIMRegistry::GetSettings();
 		</div>
 			<footer>
 	- Server Information Manager - <br />
-	Created by <a href='http://www.unitedoperations.net/' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'>Verox@UO.net</a> for <?=SIMRegistry::$settings['community_name']?> - Visit us at <a href='<?=SIMRegistry::$settings['community_url']?>' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'><?=SIMRegistry::$settings['community_url']?></a>!<br />
+	Created by <a href='http://www.armagoons.com/' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'>Verox@UO.net</a> for <?=SIMRegistry::$settings['community_name']?> - Visit us at <a href='<?=SIMRegistry::$settings['community_url']?>' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'><?=SIMRegistry::$settings['community_url']?></a>!<br />
 	This page was generated in <?php echo (microtime(true) - $teststart);?> seconds.
 	</footer>

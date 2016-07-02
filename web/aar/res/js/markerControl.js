@@ -1,7 +1,7 @@
 
 var markers = new Array();
 
-var source = new EventSource("http://aar.unitedoperations.net/api/v1/RetrieveAllPositions.php");
+var source = new EventSource("http://aar.armagoons.com/api/v1/RetrieveAllPositions.php");
 source.onmessage = function(event) {
 
     if (map == undefined)
