@@ -40,6 +40,7 @@ $settings = SIMRegistry::GetSettings();
 	<link rel="shortcut icon" href="<?=SIMRegistry::$settings['favicon']?>">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" async>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<meta name="keywords" content="<?=SIMRegistry::$settings['community_name']?>, ARMA Replay">
     <meta charset="utf-8">
 	<meta name="description" content="<?=SIMRegistry::$settings['community_name']?> Server Tracking System.">
@@ -54,12 +55,12 @@ $settings = SIMRegistry::GetSettings();
 			<!---<span id='server_header_name'>## SERVER NAME ##</span> -->
 		</div>
 		<div id='error_panel'>
-			<!-- <div class='errorBox'>This section is still under construction and may not be fully functional.</div> -->
+			<div class='errorBox'>This section is still under construction and may not be fully functional.</div>
 			<?php if ($missions[0] == 0) { echo "<div class='warnBox'>The database is empty. If this is a new install this is expected, the database will populate when replays are recorded.</div>"; } ?>
 		</div>
-		<div class='navbox'>
+		<!-- <div class='navbox'>
 		<a href='<?=SIMRegistry::$settings['community_url']?>'><h3 class='navbox_title'><?=SIMRegistry::$settings['community_name']?></h3></a><h3 class='navbox_content'> « Missions History</h3>
-		</div>
+	</div> -->
 		<div id='past_missions_list' class='outerBox'>
 			<h3>Recent Mission History</h3>
 			<div class='contentBox'>
@@ -105,7 +106,7 @@ $settings = SIMRegistry::GetSettings();
 			</div>
 		</div>
 			<footer>
-	- Server Information Manager - <br />
-	Created by <a href='http://www.armagoons.com/' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'>Verox@UO.net</a> for <?=SIMRegistry::$settings['community_name']?> - Visit us at <a href='<?=SIMRegistry::$settings['community_url']?>' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'><?=SIMRegistry::$settings['community_url']?></a>!<br />
+	- ArmaGoons AAR Replays - <br />
+	Created by <a href='http://verox.me' target='_blank'style='text-decoration: none; color: rgb(195, 121, 120);'>Verox</a>. Adaped for <?=SIMRegistry::$settings['community_name']?> by Gibfender.<br />
 	This page was generated in <?php echo (microtime(true) - $teststart);?> seconds.
 	</footer>
