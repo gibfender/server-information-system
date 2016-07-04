@@ -6,7 +6,7 @@ if (!isset($_GET['id']))
     die ("No replay file specified.");
 }
 
-$filename = "C:/inetpub/sites/server-information-system/web/aar/replays/{$_GET['id']}.replay";
+$filename = "C:\inetpub\sites\server-information-system\web\aar\replays\{$_GET['id']}.replay";
 
 // Check if the file exists here.
 if (!file_exists($filename))
