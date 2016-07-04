@@ -1,6 +1,0 @@
-C:\inetpub\sites\server-information-system\daemon\SIMDaemon\bin\Release\SIMDaemon.exe.config
-C:\inetpub\sites\server-information-system\daemon\SIMDaemon\bin\Release\SIMDaemon.exe
-C:\inetpub\sites\server-information-system\daemon\SIMDaemon\bin\Release\SIMDaemon.pdb
-C:\inetpub\sites\server-information-system\daemon\SIMDaemon\obj\Release\SIMDaemon.csprojResolveAssemblyReference.cache
-C:\inetpub\sites\server-information-system\daemon\SIMDaemon\obj\Release\SIMDaemon.exe
-C:\inetpub\sites\server-information-system\daemon\SIMDaemon\obj\Release\SIMDaemon.pdb

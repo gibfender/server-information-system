@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<DaemonConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ApiEndpoint>http://aar.armagoons.com/api/v1/data.php</ApiEndpoint>
-  <ServerName>SRV1</ServerName>
-</DaemonConfiguration>

@@ -1,5 +1,0 @@
-C:\inetpub\sites\server-information-system\extension\dll\SIMExt\bin\Debug\SIMExt.dll
-C:\inetpub\sites\server-information-system\extension\dll\SIMExt\bin\Debug\SIMExt.pdb
-C:\inetpub\sites\server-information-system\extension\dll\SIMExt\obj\Debug\SIMExt.csprojResolveAssemblyReference.cache
-C:\inetpub\sites\server-information-system\extension\dll\SIMExt\obj\Debug\SIMExt.dll
-C:\inetpub\sites\server-information-system\extension\dll\SIMExt\obj\Debug\SIMExt.pdb
