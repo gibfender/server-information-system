@@ -12,7 +12,7 @@ require_once __DIR__ . '/settings.php';
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Leaflet JS test</title>
+        <title>ArmaGoons AAR Player</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
         <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
