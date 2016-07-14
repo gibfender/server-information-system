@@ -132,13 +132,13 @@ class LiveCache
     {
         if (!$namespace = $this->redis->get($serverid . self::REDIS_NAMESPACE))
         {
-            // echo "ITNS\n";
+            echo "ITNS\n";
             if ($createOnNonExist)
             {
-                // echo "ITNE\n";
+                echo "ITNE\n";
                 $keyspace = $this->redis->info("KEYSPACE");
-                // var_dump($keyspace);
-                // echo "\n";
+                var_dump($keyspace);
+                echo "\n";
                 // Redis database is literally empty, just use 1.
                 foreach ($keyspace as $key => $info)
                 {
@@ -160,10 +160,10 @@ class LiveCache
                 }
                 if (empty($keyspace) || (count($keyspace) == 1 && array_key_exists("db0", $keyspace)))
                 {
-                    // echo "ITEE\n";
+                    echo "ITEE\n";
                     $this->redis->set($serverid . self::REDIS_NAMESPACE, 1);
                     $this->redis->select(1);
-                    // echo "CREATED AND SET NAMESPACE 1";
+                    echo "CREATED AND SET NAMESPACE 1";
                     return 1;
                 }
             }

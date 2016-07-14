@@ -19,10 +19,6 @@ $json = file_get_contents("php://input"); // What the fuck, php...
 // Decode the json.
 $decoded_json = json_decode($json, true);
 
-$myfile = fopen("../../logs/data.txt", "a");
-fwrite($myfile, "\n". $decoded_json);
-fclose($myfile);
-
 // Clean up double-firing kills events.
 /**
  * I'm not sure if the name field is sufficently unique to be using to filter duplicate events
@@ -67,6 +63,8 @@ $redisCache->Update($decoded_json);
 $fileStore = new RecordReplay();
 $fileStore->Record($decoded_json);
 
-
+$myfile = fopen("../../logs/data.txt", "a");
+fwrite($myfile, "\n". $json);
+fclose($myfile);
 
 ?>
