@@ -78,7 +78,7 @@ namespace Simulator
                 }
 
                 datapoint.Append(json_footer);
-                File.AppendAllText("C:\\tester.JSON", datapoint.ToString());
+                File.AppendAllText("C:\\tester.txt", datapoint.ToString());
             }
         }
     }

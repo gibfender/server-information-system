@@ -23,22 +23,22 @@ while (true) {
     $it = NULL; /* Initialize our iterator to NULL */
     while($arr_keys = $redis->scan($it, "UNIT:*")) {
         foreach($arr_keys as $str_key) {
-            echo "Here is a key: $str_key\n";
+            //echo "Here is a key: $str_key\n";
             $unitsArray[$str_key] = $redis->hGetAll($str_key);
-            $this_array = $redis->hGetAll($str_key);
-            $this_array['id'] = $str_key;
-            array_push($unitsArray, $this_array);
+             $this_array = $redis->hGetAll($str_key);
+             $this_array['id'] = $str_key;
+             array_push($unitsArray, $this_array);
         }
-        echo "No more keys to scan!\n";
+        //echo "No more keys to scan!\n";
     }
 
     echo "data: " . json_encode($unitsArray) . "\n\n";
-    $redis->get('SRV1:units');
-    $redis->get('SRV1:fps');
-    $mission = $redis->get('SRV1:mission:filename') . "." .$redis->get('SRV1:mission:island');
-    echo "data: {\"units\":" . $redis->get('SRV1:units') . ",\n";
-    echo "data: \"fps\":" . $redis->get('SRV1:fps') . ",\n";
-    echo "data: \"mission\": \"". $mission ."\"}\n\n";
+     $redis->get('SRV1:units');
+     $redis->get('SRV1:fps');
+     $mission = $redis->get('SRV1:mission:filename') . "." .$redis->get('SRV1:mission:island');
+     echo "data: {\"units\":" . $redis->get('SRV1:units') . ",\n";
+     echo "data: \"fps\":" . $redis->get('SRV1:fps') . ",\n";
+     echo "data: \"mission\": \"". $mission ."\"}\n\n";
     ob_flush();
     flush();
     sleep(3.1);
