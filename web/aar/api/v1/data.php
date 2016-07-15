@@ -63,4 +63,12 @@ $redisCache->Update($decoded_json);
 $fileStore = new RecordReplay();
 $fileStore->Record($decoded_json);
 
+$fp_data = fopen('../../logs/data.json', 'w');
+fwrite($fp_data, json_decode($json, true));
+fclose($fp_data);
+
+$fp_dedcoded = fopen('../../logs/datadecoded.json', 'w');
+fwrite($fp_dedcoded, $decoded_json);
+fclose($fp_dedcoded);
+
 ?>
