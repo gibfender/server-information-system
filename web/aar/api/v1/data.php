@@ -63,8 +63,4 @@ $redisCache->Update($decoded_json);
 $fileStore = new RecordReplay();
 $fileStore->Record($decoded_json);
 
-$myfile = fopen("../../logs/data.txt", "a");
-fwrite($myfile, "\n". $json);
-fclose($myfile);
-
 ?>

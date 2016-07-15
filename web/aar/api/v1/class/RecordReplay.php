@@ -24,6 +24,10 @@ class RecordReplay
         // Append the file
         file_put_contents($temp_replay , json_encode($json['data']) . "\n", FILE_APPEND);
 
+				$myfile = fopen("../../logs/replay.txt", "a");
+				fwrite($myfile, "\n". $temp_replay);
+				fclose($myfile);
+
         // Check if we need to perform specific functions.
         switch ($json['event']) {
             case 'start_mission':
