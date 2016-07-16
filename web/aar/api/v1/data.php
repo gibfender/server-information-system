@@ -55,12 +55,13 @@ if (count($decoded_json['data']['kills']) > 1) // If we only have 1 kill event t
 
 print_r($decoded_json);
 
-//TODO UNCOMMENT AFTER
 // Init the live cache handler and perform the update.
 $redisCache = new LiveCache();
 $redisCache->Update($decoded_json);
 
 $fileStore = new RecordReplay();
 $fileStore->Record($decoded_json);
+
+
 
 ?>
