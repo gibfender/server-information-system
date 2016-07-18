@@ -100,7 +100,7 @@ InitUIControl(frames.length);
 
 function InitUIControl(frames) {
     $("#replaySeeker").attr("max", frames);
-    window.alert("This tool is in Beta.\n\nPlease report any and all bugs, comments or suggestions on the bug tracker at \n  https://github.com/Verox-/aar \nor to Verox either in person or on the forum thread.\n\n");
+    window.alert("This tool is in Beta.\n\nPlease report any and all bugs, comments or suggestions on the bug tracker at \n  https://github.com/gibfender/server-information-system/issues \nor to Gibfender directly.\n\n");
     $(".controlsContainer").show(300);
     $("#sidebarv2").show(300);
 }
