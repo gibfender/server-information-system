@@ -168,7 +168,7 @@ require_once __DIR__ . '/settings.php';
             <div class="sidebar-content">
                 <div class="sidebar-pane" id="aar">
                     <h1 class="sidebar-header">
-                        United Operations' AAR
+                        ArmaGoons AAR
                         <div class="sidebar-close"><i class="fa fa-caret-left"></i></div>
                     </h1>
 
