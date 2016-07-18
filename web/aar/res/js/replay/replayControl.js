@@ -178,7 +178,7 @@ function RunClock() {
             clearInterval(replayClock);
             replayClock = null;
             $("#playPauseButton").html("<i class='fa fa-play'></i>");
-            console.log("STOP THE CLOCK!");
+            console.log("Replay ended.");
         } else if (replayClock == null || override === true) {
             replayClock = setInterval(function() {
                 //console.log(frames[framePointer]);
@@ -189,13 +189,13 @@ function RunClock() {
                 UpdateInterface();
                 framePointer++;
                 if (framePointer > frames.length) {
-                    console.log("OMG STOP!");
+                    console.log("Replay stopped.");
                     $("#playPauseButton").html("<i class='fa fa-play'></i>");
                     clearInterval(replayClock);
                     replayClock = null;
                 }
             }, avgFrameDuration);
-            console.log("STAHT THE CLOCK!");
+            console.log("Replay started.");
             $("#playPauseButton").html("<i class='fa fa-pause'></i>");
         }
 
