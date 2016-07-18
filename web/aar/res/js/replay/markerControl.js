@@ -44,7 +44,7 @@ function UpdateUnitMarkers(units, groups)
 
 
             markers[uNid].bindPopup("<b>" + popupTitle + "</b>");
-            //console.log("new");
+            console.log("new");
             didAddOrRemove = true;
         }
         else
@@ -80,7 +80,7 @@ function UpdateUnitMarkers(units, groups)
 
             // Update the CPOS.
             markers[uNid].getPopup().setContent(popupContent).update();
-            //console.log("update");
+            console.log("update");
         }
     }
     if (markerRemoveQueue.length > 0)
@@ -95,7 +95,7 @@ function UpdateUnitMarkers(units, groups)
             map.removeLayer(markers[markerRemoveQueue[key]]);
             delete markers[markerRemoveQueue[key]];
             //markers[markerRemoveQueue[key]] = undefined;
-            //console.log("remove");
+            console.log("remove");
         }
 
         didAddOrRemove = true;
@@ -137,7 +137,7 @@ function UpdatePlayersTab(units, groups)
                 $("#indforSideContainer > .groupsContainer > ul").append(html);
                 break;
             default:
-                //console.log("OH SHIT!");
+                console.log("OH SHIT!");
         }
     }
 }
