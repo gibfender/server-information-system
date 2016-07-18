@@ -6,7 +6,7 @@ $.ajax({
     success: function(data, status, request) {
         download_size = request.getResponseHeader('Content-Length');
         $("#mapContainer").append("<span class='consoleMessage'>Downloading and decompressing replay file (" + (download_size / 1000000).toFixed(2) + "MB)...</span>");
-        if (download_size > 100000)
+        if (download_size > 800000)
         {
             alert("Large replay warning:\n\nThis is a large replay and may take some time to download.\nThe page may appear to be frozen.\nPlease be patient.");
         }
@@ -38,7 +38,7 @@ while (replayFilePointer != -1) {
     //replay += chunk[1];
     replayFilePointer = chunk[0];
 
-	if (chunk[0] < 0)
+    if (chunk[0] < 0)
     {
         finalResult = chunk;
         console.info("Finished downloading replay.");

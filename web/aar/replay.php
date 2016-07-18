@@ -231,7 +231,7 @@ require_once __DIR__ . '/settings.php';
             </div>
         </div>
         <!--<div id='staticLinkContainer' class='staticLinkContainer' style="display: none;">
-            <i id='staticLinkContainerClose' class="fa fa-times"></i>&nbsp;<span id='staticLinkText'>http://aar.unitedoperations.net/replay/D93A55C4A51AFF52E2E4BFED3BB28D89/frame/100</span>
+            <i id='staticLinkContainerClose' class="fa fa-times"></i>&nbsp;<span id='staticLinkText'>http://aar.armagoons.com/replay/D93A55C4A51AFF52E2E4BFED3BB28D89/frame/100</span>
         </div> -->
         <div id="mapContainer">
             <!--- <div id="map"></div> -->
