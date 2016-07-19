@@ -250,7 +250,7 @@ function HandleKillEvents(killEvent)
         // Push the marker to the array.
         kills.push(tmp_killMarker);
 
-        //console.log("kill");
+        console.log("kill");
     }
 
     function TimeStringify(sec, totalsec) {

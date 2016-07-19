@@ -141,7 +141,7 @@ function RunClock() {
 
     $("#staticLinkButton").click(function() {
         $("#staticLinkContainer").toggle(400);
-        $("#staticLinkText").html("http://aar.armagoons.com/replay/" + replayIdentifierHash + "/frame/" + framePointer);
+        $("#staticLinkText").html(base_url + "/replay/" + replayIdentifierHash + "/frame/" + framePointer);
     });
 
     $("#staticLinkContainerClose").click(function() {
